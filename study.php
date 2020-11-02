@@ -1,7 +1,5 @@
 <?php
 	header("Content-Type: text/html; charset=UTF-8");
-
-
 	// 配置Git：
 	echo "1、安装完后，右键单击桌面空白处，选择Git Gui Here，进去之后，选择左上角的help选项，会出现一个Show SSH Key，然后点击“Generate Key”得到秘钥。将其复制到剪切板。";
 	echo "</br>";
@@ -21,4 +19,10 @@
 	// cd myProject
 	echo "</br>";
 	echo "然后git clone +你想要克隆的项目的地址。如： git clone https://github.com/mohui/1407C.git";
+	
+	
+	echo "1：git status//查看当前项目文件状态，如果第一次，你会发现都红颜色的，因为它还没有交给git管理。</br>";
+	echo "2：git add . //（.）点表示当前目录下的所有内容，交给git管理，也就是提交到了git的本地仓库。</br>";
+	echo "3：git commit -m ‘添加说明’ //对你更新或修改了哪些内容做一个描述。</br>";
+	echo "4：git push -u origin master //将本地的项目提交到远程仓库中。</br>";
 ?>
